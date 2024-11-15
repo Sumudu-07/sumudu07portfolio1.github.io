@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b42989d45a.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Cyber security Undergraduate</p>
+            <h1>Hi,i am <span>Sumudu</span><br>Priyankara From Sri lanka</h1>
+        </div>
+    </div>
+</div>
+<!----------About--------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/sp07.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I’m Sumudu Priyankara, a passionate student specializing in Cyber Security at the Sri Lanka Technological Campus (SLTC) Research University. I am deeply interested in the dynamic and ever-evolving world of technology, with a focus on securing digital assets and protecting information systems against modern threats.
+
+                    Although I am just starting my professional journey with no formal work experience yet, my academic pursuits have equipped me with foundational knowledge in cyber security principles, tools, and practices. I am eager to apply this knowledge in practical settings and contribute to building safer digital environments.
+                    
+                    I believe in continuous learning and problem-solving, and I am excited to grow as a cybersecurity professional. Thank you for visiting my portfolio!</p>
+                <div class="tab-title">
+                    <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>   
+                    <p class="tab-links" onclick="opentab('experience')">Experiance</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>  
+                </div>
+                <div class="tab-contents active-tabs" id="Skills">
+                    <ul>
+                        <li><span>Python</span><br>Development</li>
+                        <li><span>Web development</span><br>Web/App development</li>
+                        <li><span>App development</span><br>Building Android/Ios Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Python Coding</span><br>6 months</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Sltc research university</span><br>BSc Hons in Cyber security</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------Services-------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-regular fa-file-code"></i>
+                <h2>Web development</h2>
+                <p>Building responsive, user-friendly websites with modern designs, ensuring seamless functionality and a great user experience.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python development</h2>
+                <p>Delivering efficient, scalable solutions with Python for web apps, automation, data analysis, and custom scripting tailored to you.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App development</h2>
+                <p>Creating user-friendly, high-performance mobile and web apps tailored to your needs with seamless functionality and modern design.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!---------portfolio----->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work 1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Creating engaging, interactive social media apps with intuitive interfaces, robust features, and seamless user experiences.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work 2.png">
+                <div class="layer">
+                    <h3>Shopping App</h3>
+                    <p>Developing intuitive, secure, and feature-rich shopping apps with smooth navigation, easy payment integration, and a personalized user experience.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work 3.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Building dynamic music apps with seamless streaming, personalized playlists, and user-friendly interfaces for an immersive listening experience.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+    </div>
+</div>
+<!------------contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>example@example.com</p>
+                <p><i class="fa-solid fa-mobile-screen"></i>0710000000</p>
+                <div class="social-icon">
+                    <a href="https://faceboook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ Sumudu. Made with<i class="fa-solid fa-heart"></i> by Sumudu. </p>
+    </div>
+</div>
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-links");
+
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tabs");
+            
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tabs");
+
+    }
+
+
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbydrzZqrk4uH5Wn_fb__kJIJJQgU2Jxsz1Pak3BMBxVcE48gTPRookZ5jTSAjSK-iPupA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+    msg.innerHTML = "Message sent successfully";
+    setTimeout(function() {
+        msg.innerHTML = "";
+    }, 5000);
+    form.reset();
+})
+
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+</body>
+</html>
